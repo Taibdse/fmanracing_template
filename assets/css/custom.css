@@ -1,0 +1,21 @@
+.single-slider{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.product-item-dec{
+    
+    color: var(--secondary-color)!important;
+}
+.shopping-cart-title{
+    color: yellow!important;
+}
+.product-wrapper{
+    color: yellow;
+}
+.main-menu > nav > ul > li > a{
+    color: #fff!important;
+}
+.main-menu a:hover{
+    color: var(--secondary-color)!important;
+}
