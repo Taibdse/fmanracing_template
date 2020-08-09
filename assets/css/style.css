@@ -989,7 +989,7 @@
     font-family: "Oswald",sans-serif;
 }
 .product-price > span {
-    color: #353535;
+    /* color: #353535; */
     font-family: "Oswald",sans-serif;
     font-size: 24px;
     font-weight: bold;

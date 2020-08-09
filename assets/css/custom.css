@@ -1,21 +1,136 @@
+:root{
+    --main-color: #F82102;
+    --secondary-color: #FFB52F
+}
+
+.bg-main{
+    background-color: var(--main-color)!important;
+}
+.text-main{
+    color: var(--main-color)!important;
+}
+.text-secondary{
+    color: var(--secondary-color)!important;
+}
+
 .single-slider{
     height: 500px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 .product-item-dec{
-    
     color: var(--secondary-color)!important;
 }
 .shopping-cart-title{
     color: yellow!important;
 }
-.product-wrapper{
-    color: yellow;
-}
+
 .main-menu > nav > ul > li > a{
     color: #fff!important;
 }
 .main-menu a:hover{
     color: var(--secondary-color)!important;
+}
+
+.product-img{
+    overflow: hidden;
+}
+/* .product-img img{
+    transition: all linear 0.2s;
+}
+.product-img:hover img{
+    transform: scale(1.1);
+} */
+.cr-btn{
+    border: none;
+}
+.cr-btn:hover{
+    background-color: var(--main-color);
+}
+.custom-radio{
+    height: 20px;
+    width: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.breadcrumb-area{
+    background-color: red;
+    background-size: 100% 100%;
+    height: 700px;
+}
+
+.product-wrapper{
+    transition: all ease-in-out 0.3s;
+}
+
+.product-wrapper:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px #ccc;
+}
+
+.product-content{
+    height: 150px;
+}
+
+table .product-thumbnail img{
+    width: 120px;
+}
+
+.slider-social ul li.youtube a:hover {
+    border: 2px solid #FF0000;
+    color: #fff;
+    background-color: #FF0000;
+}
+
+.main-menu nav ul li.active > a,
+.stick .main-menu nav ul li.active > a {
+    color: var(--secondary-color)!important;
+}
+
+.slider-area .single-slider{
+    height: 700px;
+}
+
+div.mobile-menu > nav > ul > li.active > a{
+    color: var(--main-color)!important;
+}
+
+
+@media(max-width: 1200px){
+    .breadcrumb-area{
+        height: 600px;
+    }
+    .slider-area .single-slider{
+        height: 600px;
+    }
+    table .product-thumbnail img{
+        width: 100px;
+    }
+}
+
+@media(max-width: 900px){
+    .breadcrumb-area{
+        height: 400px;
+    }
+    .slider-area .single-slider{
+        height: 400px;
+    }
+    table .product-thumbnail img{
+        width: 80px;
+    }
+    table .product-name a{
+        font-size: 0.9em!important;
+    }
+}
+
+@media(max-width: 600px){
+    .breadcrumb-area{
+        height: 200px;
+    }
+    .slider-area .single-slider{
+        height: 200px;
+    }
+    table .product-thumbnail img{
+        width: 60px;
+    }
 }

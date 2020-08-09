@@ -60,22 +60,22 @@
         loop: true,
         autoplay: false,
         autoplayTimeout: 5000,
-        navText: ['PRE', 'NEXT'],
+        // navText: ['PRE', 'NEXT'],
         nav: true,
         item: 3,
-        margin: 20,
+        margin: 15,
         responsive: {
             0: {
-                items: 1
-            },
-            768: {
                 items: 2
             },
-            1000: {
+            768: {
                 items: 3
             },
-            1200: {
+            1000: {
                 items: 4
+            },
+            1200: {
+                items: 5
             }
         }
     })
@@ -293,18 +293,53 @@
     --------------------- */
     var sliderrange = $('#slider-range');
     var amountprice = $('#amount');
+    var prices = [];
+    for(let i = 0; i <= 1000; i++){
+        prices.push(i * 10);
+    }
+
     $(function() {
-        sliderrange.slider({
+        function findNearest(includeLeft, includeRight, value) {
+            var nearest = null;
+            var diff = null;
+            for (var i = 0; i < prices.length; i++) {
+                if ((includeLeft && prices[i] <= value) || (includeRight && prices[i] >= value)) {
+                    var newDiff = Math.abs(value - prices[i]);
+                    if (diff == null || newDiff < diff) {
+                        nearest = prices[i];
+                        diff = newDiff;
+                    }
+                }
+            }
+            return nearest;
+        }
+        var priceSlider = sliderrange.slider({
             range: true,
             min: 0,
-            max: 1200,
-            values: [0, 1000],
+            max: 10000,
+            values: [0, 10000],
             slide: function(event, ui) {
-                amountprice.val("$" + ui.values[0] + " - $" + ui.values[1]);
+                
+                var includeLeft = event.keyCode != $.ui.keyCode.RIGHT;
+                var includeRight = event.keyCode != $.ui.keyCode.LEFT;
+                var value = findNearest(includeLeft, includeRight, ui.value);
+                if (ui.value == ui.values[0]) {
+                    priceSlider.slider('values', 0, value);
+                }
+                else {
+                    priceSlider.slider('values', 1, value);
+                }
+                // $("#price-amount").html('$' + slider.slider('values', 0) + ' - $' + slider.slider('values', 1));
+                // return false;
+                var startVal = priceSlider.slider('values', 0);
+                var endVal = priceSlider.slider('values', 1);
+                console.log(startVal)
+                amountprice.text(startVal + " - " + endVal);
             }
         });
-        amountprice.val("$" + sliderrange.slider("values", 0) +
-            " - $" + sliderrange.slider("values", 1));
+        amountprice.text(sliderrange.slider("values", 0) +
+            " - " + sliderrange.slider("values", 1));
+            // amountprice.css({ s })
     });
     
     
