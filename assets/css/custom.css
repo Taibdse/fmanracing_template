@@ -100,11 +100,21 @@ div.mobile-menu > nav > ul > li.active > a{
     .breadcrumb-area{
         height: 600px;
     }
+   
     .slider-area .single-slider{
         height: 600px;
     }
     table .product-thumbnail img{
         width: 100px;
+    }
+    .product-content{
+        height: 100px;
+    }
+    .product-content h5{
+        font-size: 1.2em!important;
+    }
+    .product-content .product-price, .product-content .product-price span{
+        font-size: 1em;
     }
 }
 
@@ -115,11 +125,28 @@ div.mobile-menu > nav > ul > li.active > a{
     .slider-area .single-slider{
         height: 400px;
     }
+    .breadcrumb-content{
+        /* position: static; */
+        margin-top: -100px;
+    }
     table .product-thumbnail img{
         width: 80px;
     }
     table .product-name a{
         font-size: 0.9em!important;
+    }
+    .product-content{
+        height: 100px;
+    }
+    .product-content h5{
+        font-size: 1em!important;
+    }
+    .product-content .product-price, .product-content .product-price span{
+        font-size: 1em;
+    }
+    .shop-wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -127,10 +154,23 @@ div.mobile-menu > nav > ul > li.active > a{
     .breadcrumb-area{
         height: 200px;
     }
+    .breadcrumb-content{
+        position: static;
+        margin-top: -100px;
+    }
     .slider-area .single-slider{
         height: 200px;
     }
     table .product-thumbnail img{
         width: 60px;
+    }
+    .product-content{
+        height: 80px;
+    }
+    .product-content h5{
+        font-size: 1em!important;
+    }
+    .product-content .product-price, .product-content .product-price span{
+        font-size: 1em;
     }
 }
