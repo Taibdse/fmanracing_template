@@ -392,9 +392,35 @@
                 </div>
                
             </footer>
+
+            <a href="tel:0926443277">
+                <div class="question-contact">
+                    <div class="question-content-number float-left">
+                        <h6>0926 443 277</h6>
+                    </div>
+                    <div class="question-icon">
+                        <i class="icofont icofont-phone"></i>
+                    </div>
+                </div>
+           </a>
         </div>
         
-        
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+                xfbml            : true,
+                version          : 'v8.0'
+            });
+            };
+
+            (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      </script>
         
 		
 		
