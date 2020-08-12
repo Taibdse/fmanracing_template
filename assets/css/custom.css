@@ -135,7 +135,7 @@ div.mobile-menu > nav > ul > li.active > a{
         width: 100px;
     }
     .product-content{
-        height: 100px;
+        height: 110px;
     }
     .product-content h5{
         font-size: 1.2em!important;
@@ -162,10 +162,7 @@ div.mobile-menu > nav > ul > li.active > a{
     table .product-name a{
         font-size: 0.9em!important;
     }
-    .product-content{
-        height: 100px;
-    }
-    .product-content h5{
+s    .product-content h5{
         font-size: 1em!important;
     }
     .product-content .product-price, .product-content .product-price span{
@@ -192,16 +189,21 @@ div.mobile-menu > nav > ul > li.active > a{
         width: 60px;
     }
     .product-content{
-        height: 80px;
+        /* height: 80px; */
+        /* overflow: hidden; */
     }
     .product-content h5{
         font-size: 1em!important;
     }
     .product-content .product-price, .product-content .product-price span{
-        font-size: 1em;
+        font-size: 0.9em;
     }
-}
 
+    .logo-small-device{
+        margin-top: 0px!important;
+    }
+    
+}
 
 
 
