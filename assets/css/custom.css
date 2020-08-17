@@ -140,19 +140,18 @@ header{
 }
 
 .product-wrapper .product-action{
-    opacity: 0;
-    background-color: rgba(0,0,0,0.7);
-    bottom: 150px;
-    transition: all ease-in-out 0.2;
+    position: static!important;
+    opacity: 1;
+    padding: 0;
 }
 
-.product-wrapper:hover .product-action{
+/* .product-wrapper:hover .product-action{
     opacity: 1;
 }
 
 .product-wrapper .product-action a{
     background-color: var(--secondary-color);
-}
+} */
 
 .show{
     display: block;
@@ -298,7 +297,7 @@ header{
         width: 100px;
     }
     .product-content{
-        height: 110px;
+        height: 120px;
     }
     .product-content h5{
         font-size: 1.2em!important;
