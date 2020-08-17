@@ -132,8 +132,8 @@ header{
     vertical-align: middle;
 } */
 
-.custom-section-title{
-    
+.section-title > h5{
+    color: #22252C!important;
 }
 .product-wrapper{
     position: relative;

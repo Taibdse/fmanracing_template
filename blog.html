@@ -30,89 +30,77 @@
     </head>
     <body>
         <div class="wrapper">
-            <header class="mb-120">
-                <div class="header-area transparent-bar ptb-55">
-                    <div class="container">
+            <header>
+                <div class="header-area transparent-bar pt-55">
+                    <div class="container-fluid px-sm-5">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-4">
+                            <div class="col-lg-4 col-md-3">
                                 <div class="logo-small-device" style="margin-top: -30px;">
-                                    <a href="index.html"><img alt="" src="assets/img/logo/logo.jpg" style="width: 200px"></a>
+                                    <a href="index.html"><img alt="" src="assets/img/logo/logo.jpg" style="width: 200px; max-width: 100%;"></a>
                                 </div>
                             </div>
-                            <div class="col-lg-8 col-md-8 col-8">
-                                <div class="header-contact-menu-wrapper pl-45">
-                                    <div class="header-contact">
+                            <div class="col-lg-8 col-md-9 px-sm-1">
+                                <div class="row">
+                                    <div class="sidebar-search col-6">
+                                        <form action="#">
+                                            <input type="text" placeholder="Tìm sản phẩm...">
+                                            <button><i class="ti-search"></i></button>
+                                        </form>
                                     </div>
-                                    <div class="menu-wrapper text-center bg-main">
-                                        <div class="main-menu open">
-                                            <nav class="bg-main">
+                                    <div class="col-6">
+                                        <div class="header-cart cart-small-device">
+                                            <button class="icon-cart">
+                                                <i class="ti-shopping-cart"></i>
+                                                <span class="count-style">01</span>
+                                                <span class="count-price-add">900,000 đ</span>
+                                            </button>
+                                            <div class="shopping-cart-content">
                                                 <ul>
-                                                    <li><a href="index.html">Trang chủ</a></li>
-                                                    <li ><a href="about-us.html">Giới thiệu</a></li>
-                                                    <li ><a href="#">Sản phẩm</a>
-                                                        <ul>
-                                                            <li><a href="shop.html">Tổng hợp các loại nhớt</a></li>
-                                                            <li><a href="shop.html">Pô độ Exhaust</a></li>
-                                                            <li><a href="shop.html">Xi nhan led kiểu</a></li>
-                                                            <li><a href="shop.html">Bảo vệ tay thắng</a></li>
-                                                        </ul>
+                                                    <li class="single-shopping-cart">
+                                                        <div class="">
+                                                            <a href="#"><img alt="" style="width: 50px" src="assets/img/product/product-15.jpg"></a>
+                                                        </div>
+                                                        <div class="shopping-cart-title float-left">
+                                                            <h3><a href="#" style="font-size: 15px">Speedol Pro GP 4T 10W40 </a></h3>
+                                                            <span>Giá: 900,000 đ</span>
+                                                            <span>Số lượng: 1</span>
+                                                        </div>
+                                                        <div class="shopping-cart-delete">
+                                                            <a href="#"><i class="icofont icofont-ui-delete"></i></a>
+                                                        </div>
                                                     </li>
-                                                    <li class="active"><a href="/blog.html">Tin tức</a></li>
-                                                    <li><a href="/shop.html">Khuyến mãi</a></li>
-                                                    <li><a href="/cart.html">Giỏ hàng</a></li>
                                                 </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header-cart cart-small-device">
-                                    <button class="icon-cart">
-                                        <i class="ti-shopping-cart"></i>
-                                        <span class="count-style">01</span>
-                                        <span class="count-price-add">900,000 đ</span>
-                                    </button>
-                                    <div class="shopping-cart-content">
-                                        <ul>
-                                            <li class="single-shopping-cart">
-                                                <div class="">
-                                                    <a href="#"><img alt="" style="width: 50px" src="assets/img/product/product-15.jpg"></a>
+                                                <div class="shopping-cart-total">
+                                                    <h4>Tổng: <span>900,000 đ</span></h4>
                                                 </div>
-                                                <div class="shopping-cart-title float-left">
-                                                    <h3><a href="#" style="font-size: 15px">Speedol Pro GP 4T 10W40 </a></h3>
-                                                    <span>Giá: 900,000 đ</span>
-                                                    <span>Số lượng: 1</span>
+                                                <div class="shopping-cart-btn">
+                                                    <a class="btn-style cr-btn" href="/checkout.html">Tiến hành đặt hàng</a>
                                                 </div>
-                                                <div class="shopping-cart-delete">
-                                                    <a href="#"><i class="icofont icofont-ui-delete"></i></a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <div class="shopping-cart-total">
-                                            <h4>Tổng: <span>900,000 đ</span></h4>
-                                        </div>
-                                        <div class="shopping-cart-btn">
-                                            <a class="btn-style cr-btn" href="/checkout.html">Tiến hành đặt hàng</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
+                        </div>
+                        <div class="row">
                             <div class="mobile-menu-area col-12">
                                 <div class="mobile-menu">
                                     <nav id="mobile-menu-active">
                                         <ul class="menu-overflow">
-                                                <li class="active"><a href="index.html">Trang chủ</a></li>
-                                                <li><a href="about-us.html">Giới thiệu</a></li>
-                                                <li><a href="/shop.html">Sản phẩm</a>
-                                                    <ul>
-                                                        <li><a href="/shop.html">Tổng hợp các loại nhớt</a></li>
-                                                        <li><a href="/shop.html">Pô độ Exhaust</a></li>
-                                                        <li><a href="/shop.html">Xi nhan led kiểu</a></li>
-                                                        <li><a href="/shop.html">Bảo vệ tay thắng</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="/blog.html">Tin tức</a></li>
-                                                <li><a href="/shop.html">Khuyến mãi</a></li>
-                                                <li><a href="/cart.html">Giỏ hàng</a></li>
+                                            <li><a href="index.html">Trang chủ</a></li>
+                                            <li><a href="about-us.html">Giới thiệu</a></li>
+                                            <li><a href="/shop.html">Sản phẩm</a>
+                                                <ul>
+                                                    <li><a href="/shop.html">Tổng hợp các loại nhớt</a></li>
+                                                    <li><a href="/shop.html">Pô độ Exhaust</a></li>
+                                                    <li><a href="/shop.html">Xi nhan led kiểu</a></li>
+                                                    <li><a href="/shop.html">Bảo vệ tay thắng</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/blog.html">Tin tức</a></li>
+                                            <li><a href="/shop.html">Khuyến mãi</a></li>
+                                            <li><a href="/cart.html">Giỏ hàng</a></li>
                                         </ul>
                                     </nav>							
                                 </div>
@@ -153,6 +141,31 @@
                     </div>
                 </div>
             </header>
+
+            <div class="header-contact-menu-wrapper theme-bg" >
+                <div class=" text-center" style="width: 100%">
+                    <div class="main-menu open theme-bg" style="width: 100%;">
+                        <nav class="text-center">
+                            <ul>
+                                <li><a href="index.html">Trang chủ</a></li>
+                                <li ><a href="about-us.html">Giới thiệu</a></li>
+                                <li ><a href="#">Sản phẩm</a>
+                                    <ul>
+                                        <li><a href="shop.html">Tổng hợp các loại nhớt</a></li>
+                                        <li><a href="shop.html">Pô độ Exhaust</a></li>
+                                        <li><a href="shop.html">Xi nhan led kiểu</a></li>
+                                        <li><a href="shop.html">Bảo vệ tay thắng</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/blog.html">Tin tức</a></li>
+                                <li><a href="/shop.html">Khuyến mãi</a></li>
+                                <li><a href="/cart.html">Giỏ hàng</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
             <div class="breadcrumb-area pt-255 pb-170" style="background-image: url(assets/img/banner/banner-8.jpg)">
                 <div class="container-fluid">
                     <div class="breadcrumb-content text-center">
